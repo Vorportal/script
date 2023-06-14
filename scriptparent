@@ -1,14 +1,14 @@
-getgenv().player = game.Players.LocalPlayer
+getgenv().players = game.Players.LocalPlayer
 getgenv().paid = {
      paid1 = "FunDude_GamesYT"
      paid2 = "GoatManRB"
 }
 
 for i, v in pairs(getgenv().paid) do
-     if getgenv().player.Name == v then
+     if getgenv().players.Name == v then
           print("Paid")
           break
      else 
-     	  getgenv().player:Kick("you didn't pay boy")	
+     	  getgenv().players:Kick("you didn't pay boy")	
      end
 end
